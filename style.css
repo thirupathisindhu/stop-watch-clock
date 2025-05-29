@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(-45deg,
+      #ff9a9e,
+      #fad0c4,
+      #fbc2eb,
+      #a6c1ee,
+      #b5ead7,
+      #ffdac1,
+      #caffbf
+    );
+    background-size: 800% 800%;
+    animation: gradientBG 12s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px 20px 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  .timer-Display {
+    font-size: 3rem;
+    color: #3e3e3e;
+    background: #ffe5ec;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .laps {
+    list-style: none;
+    color: #555;
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #f0efeb;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px #ccc;
+  }
+  
+  .laps li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ccc;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .buttons button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #d8e2dc;
+    color: #2c2c2c;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons button:hover {
+    background: #ffcad4;
+    color: #000;
+    transform: scale(1.05);
+  }
+  

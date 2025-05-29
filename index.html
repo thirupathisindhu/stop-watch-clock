@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pastel Stopwatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="timer-Display" id="display">00 : 00 : 00 : 00</div>
+  <ul class="laps" id="laps"></ul>
+  <div class="buttons">
+    <button onclick="start()">Start</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="restart()">Restart</button>
+    <button onclick="lap()">Lap</button>
+    <button onclick="resetLap()">Reset Laps</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
